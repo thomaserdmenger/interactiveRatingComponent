@@ -1,9 +1,10 @@
 :root {
+  --color-background-main: hsl(216, 12%, 8%);
+  --color-circles: hsl(210, 19%, 18%);
+  --color-button: hsl(25, 97%, 53%);
   --color-heading: hsl(0, 0%, 100%);
   --color-text: hsl(217, 12%, 63%);
-  --color-buttons-active: hsl(216, 12%, 54%);
-  --color-backround-container: hsl(213, 19%, 18%);
-  --color-background-main: hsl(216, 12%, 8%);
+  --color-button-focus: hsl(216, 12%, 54%);
 }
 
 *,
@@ -17,10 +18,77 @@ html {
 }
 
 body {
-  min-width: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Overpass', sans-serif;
   background-color: var(--color-background-main);
+}
+
+.container-one {
+  width: 32.5rem;
+  height: 36rem;
+  background: linear-gradient(hsl(213, 19%, 18%), hsl(222, 21%, 12%));
+  border-radius: 15px;
+  padding: 2.5rem 2.25rem 3rem 2.25rem;
+}
+
+.container-one h1 {
+  color: var(--color-heading);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.container-one p {
+  color: var(--color-text);
+  line-height: 1.5;
+  font-size: 1.4rem;
+}
+
+.container-circles {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.circle {
+  align-items: center;
+  background-color: var(--color-circles);
+  border-radius: 100px;
+  color: var(--color-text);
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  width: 4rem;
+}
+
+.circle__hover:hover {
+  background-color: var(--color-button);
+  color: var(--color-heading);
+}
+
+.submit {
+  background-color: var(--color-button);
+  border-radius: 25px;
+  color: var(--color-heading);
+  height: 4.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 2.2rem;
+}
+
+.submit:hover {
+  background-color: var(--color-heading);
+  color: var(--color-button);
+}
+
+.circle__hover,
+.submit {
+  font-size: 1.3rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
