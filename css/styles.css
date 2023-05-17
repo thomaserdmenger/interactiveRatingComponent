@@ -1,0 +1,26 @@
+:root {
+  --color-heading: hsl(0, 0%, 100%);
+  --color-text: hsl(217, 12%, 63%);
+  --color-buttons-active: hsl(216, 12%, 54%);
+  --color-backround-container: hsl(213, 19%, 18%);
+  --color-background-main: hsl(216, 12%, 8%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--color-background-main);
+}
