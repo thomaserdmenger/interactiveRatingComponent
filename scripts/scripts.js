@@ -3,11 +3,7 @@ const btnList = document.querySelectorAll('.circle__focus')
 
 btnList.forEach(btn => {
   btn.addEventListener('click', () => {
-    // ?. Optional chaining:
-    // If a reference is nullish (null or undefined), the expression
-    // returns value of undefined instead of an error
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
-    document.querySelector('.focus')?.classList.remove('focus')
+    document.querySelector('.focus').classList.remove('focus')
     btn.classList.add('focus')
   })
 })
@@ -20,4 +16,12 @@ const containerTwo = document.querySelector('.container-two')
 btnSubmit.addEventListener('click', () => {
   containerOne.style.display = 'none'
   containerTwo.style.display = 'flex'
+})
+
+// Add result to 2nd container
+const resultText = document.querySelector('.result')
+
+btnSubmit.addEventListener('click', () => {
+  const current = document.querySelector('.focus')
+  resultText.innerHTML = `You selected ${current.value} out of 5`
 })

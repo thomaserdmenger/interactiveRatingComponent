@@ -35,19 +35,15 @@ body {
   padding: 2.5rem 2.25rem 3rem 2.25rem;
 }
 
-/* Temporary */
-
-.container-two {
-  display: none;
-}
-
-.container-one h1 {
+.container-one h1,
+.thanks {
   color: var(--color-heading);
   font-weight: 700;
   font-size: 2.5rem;
 }
 
-.container-one p {
+.container-one p,
+.appreciation {
   color: var(--color-text);
   line-height: 1.5;
   font-size: 1.4rem;
@@ -55,7 +51,7 @@ body {
 
 .container-circles {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 3rem;
 }
 
@@ -103,4 +99,40 @@ body {
   outline: none;
   border: none;
   cursor: pointer;
+}
+
+.container-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.container-two img {
+  height: 100px;
+}
+
+.result {
+  background-color: var(--color-circles);
+  height: 35px;
+  width: 165px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-button);
+  font-size: 1.3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.thanks {
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.appreciation {
+  margin: 0;
+  text-align: center;
 }
