@@ -68,6 +68,11 @@ body {
   color: var(--color-heading);
 }
 
+.focus {
+  background-color: var(--color-text);
+  color: var(--color-heading);
+}
+
 .submit {
   background-color: var(--color-button);
   border-radius: 25px;
@@ -92,5 +97,3 @@ body {
   border: none;
   cursor: pointer;
 }
-
-/* Update */
