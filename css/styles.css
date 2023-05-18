@@ -26,12 +26,19 @@ body {
   background-color: var(--color-background-main);
 }
 
-.container-one {
+.container-one,
+.container-two {
   width: 32.5rem;
   height: 36rem;
   background: linear-gradient(hsl(213, 19%, 18%), hsl(222, 21%, 12%));
   border-radius: 15px;
   padding: 2.5rem 2.25rem 3rem 2.25rem;
+}
+
+/* Temporary */
+
+.container-two {
+  display: none;
 }
 
 .container-one h1 {
